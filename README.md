@@ -18,12 +18,12 @@ A country object has following attributes:
 
 ```json
 {
-  code: 'PT',
-  name: 'Portugal',
-  timezones: [
-    'Europe/Lisbon',
-    'Atlantic/Madeira',
-    'Atlantic/Azores'
+  "code": "PT",
+  "name": "Portugal",
+  "timezones": [
+    "Europe/Lisbon",
+    "Atlantic/Madeira",
+    "Atlantic/Azores"
   ]
 }
 ```
@@ -40,10 +40,10 @@ A timezone object has following attributes
 
 ```json
 {
-  name: 'Europe/Andorra',
-  utcOffset: 60,
-  offsetStr: '+01:00',
-  countries: [ 'AD' ]
+  "name": "Europe/Andorra",
+  "utcOffset": 60,
+  "offsetStr": "+01:00",
+  "countries": [ "AD" ]
 }
 ```
 
@@ -66,12 +66,12 @@ const ctc = require('@mbanq/ctc')
 ```json
 [
   {
-    code: 'PT',
-    name: 'Portugal',
-    timezones: [
-      'Europe/Lisbon',
-      'Atlantic/Madeira',
-      'Atlantic/Azores'
+    "code": "PT",
+    "name": "Portugal",
+    "timezones": [
+      "Europe/Lisbon",
+      "Atlantic/Madeira",
+      "Atlantic/Azores"
     ]
   }
 ]
@@ -87,22 +87,22 @@ const ctc = require('@mbanq/ctc')
 ```json
 [
   {
-    name: 'Europe/Lisbon',
-    utcOffset: 0,
-    offsetStr: '+00:00',
-    countries: [ 'PT' ]
+    "name": "Europe/Lisbon",
+    "utcOffset": 0,
+    "offsetStr": "+00:00",
+    "countries": [ "PT" ]
   },
   {
-    name: 'Atlantic/Madeira',
-    utcOffset: 0,
-    offsetStr: '+00:00',
-    countries: [ 'PT' ]
+    "name": "Atlantic/Madeira",
+    "utcOffset": 0,
+    "offsetStr": "+00:00",
+    "countries": [ "PT" ]
   },
   {
-    name: 'Atlantic/Azores',
-    utcOffset: -60,
-    offsetStr: '-01:00',
-    countries: [ 'PT' ]
+    "name": "Atlantic/Azores",
+    "utcOffset": -60,
+    "offsetStr": "-01:00",
+    "countries": [ "PT" ]
   }
 ]
 ```
@@ -122,14 +122,14 @@ result:
 ```json
 [
   {
-    code: 'BQ',
-    name: 'Caribbean Netherlands',
-    timezones: [ 'America/Curacao' ]
+    "code": "BQ",
+    "name": "Caribbean Netherlands",
+    "timezones": [ "America/Curacao" ]
   },
   {
-    code: 'NL',
-    name: 'Netherlands',
-    timezones: [ 'Europe/Amsterdam' ]
+    "code": "NL",
+    "name": "Netherlands",
+    "timezones": [ "Europe/Amsterdam" ]
   }
 ]
 ```
