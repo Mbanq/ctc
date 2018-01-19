@@ -12,9 +12,9 @@ npm install --save @mbanq/ctc
 
 A country object has following attributes:
 
-* *code:* The country code [ISO code](https://es.wikipedia.org/wiki/ISO_3166-1)
-* *name:* Name of the country
-* *timezones:* An array of the country's timezones
+* **code:** The country code [ISO code](https://es.wikipedia.org/wiki/ISO_3166-1)
+* **name:** Name of the country
+* **timezones:** An array of the country's timezones
 
 ```json
 {

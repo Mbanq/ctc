@@ -1,5 +1,5 @@
 {
-  "name": "ctc",
+  "name": "@mbanq/ctc",
   "version": "0.0.1",
   "description": "Countries, timezones and currencies",
   "main": "src/index.js",
