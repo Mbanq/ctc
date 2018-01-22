@@ -2,6 +2,7 @@
 
 const countriesData = require('./data/countries')
 const timezonesData = require('./data/timezones')
+const currencyData = require('./data/currencies')
 
 const countries = (name = null) => {
   if (name) {
@@ -24,6 +25,23 @@ const timezones = (countryName = null) => {
   return timezonesData
 }
 
+// currencyCodes should be an Array
+const currencies = (currencyCodes = null) => {
+  if (currencyCodes) {
+    if (!Array.isArray(currencyCodes)) {
+      return console.log(`Please provide an Array with currency codes,
+                          e.g. [ 'EUR', 'USD' ]`)
+    }
+    // const codes = currencyCodes.replace(/\s/g, '').split(',')
+    return currencyCodes.map(code => {
+      return currencyData.filter(currency => {
+        return currency.code === code
+      })[0]
+    })
+  }
+  return currencyData
+}
+
 const getCountryCode = (name) => {
   return countriesData
     .filter(country => {
@@ -44,5 +62,6 @@ const search = (searchTerm) => {
 module.exports = {
   countries,
   timezones,
+  currencies,
   search
 }
