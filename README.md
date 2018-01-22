@@ -13,9 +13,9 @@ npm install --save @mbanq/ctc
 
 A country object has following attributes:
 
-* **code:** The country code [ISO code](https://es.wikipedia.org/wiki/ISO_3166-1)
-* **name:** Name of the country
-* **timezones:** An array of the country's timezones
+* **code** - The country code [ISO code](https://es.wikipedia.org/wiki/ISO_3166-1)
+* **name** - Name of the country
+* **timezones** - An array of the country's timezones
 
 ```json
 {
@@ -31,12 +31,12 @@ A country object has following attributes:
 
 ## Timezones
 
-A timezone object has following attributes
+A timezone object has following attributes:
 
-* **name:** The name of the timezone.
-* **utcOffset:** UTC offset in minutes.
-* **offsetStr:** UTC offset in hours (human readable string).
-* **countries:** An array of country codes in the timezone.
+* **name** - The name of the timezone.
+* **utcOffset** - UTC offset in minutes.
+* **offsetStr** - UTC offset in hours (human readable string).
+* **countries** - An array of country codes in the timezone.
 
 
 ```json
@@ -48,6 +48,30 @@ A timezone object has following attributes
 }
 ```
 
+## Currencies
+
+A currency object has following attributes:
+
+* **symbol** - Symbolic representation of the currency, e.g. 'Skr'
+* **name** - Name of the currency e.g. 'Swedish Krona'
+* **symbol_native** - Currenncy's native symbol, e.g. 'kr'
+* **decimal_digits** - number of decimal digits, e.g. 2
+* **rounding** - currency rounding
+* **code** - ISO 4217 currency code, e.g. 'SEK'
+* **name_plural** - Currency's plural form, e.g. 'Swedish kronor'
+
+```
+{
+  "symbol": "Skr",
+  "name": "Swedish Krona",
+  "symbol_native": "kr",
+  "decimal_digits": 2,
+  "rounding": 0,
+  "code": "SEK",
+  "name_plural": "Swedish kronor"
+}
+
+```
 ## API
 
 ```js
@@ -112,6 +136,34 @@ If you don't provide a country name to the `timezones()` function - the result
 will contain all the timezones
 
 `timezones()` function always returns an `Array`
+
+### Currencies
+
+`currencies()` function accepts an `Array` of currency codes, e.g.
+`ctc.currencies(['HTG','USD'])`
+
+```json
+[
+  {
+    "symbol": "HTG",
+    "name": "Haitian gourde",
+    "symbol_native": "G",
+    "decimal_digits": 2,
+    "rounding": 0,
+    "code": "HTG",
+    "name_plural": "Haitian gourdes"
+  },
+  {
+    "symbol": "$",
+    "name": "US Dollar",
+    "symbol_native": "$",
+    "decimal_digits": 2,
+    "rounding": 0,
+    "code": "USD",
+    "name_plural": "US dollars"
+  }
+]
+```
 
 ### Search
 
