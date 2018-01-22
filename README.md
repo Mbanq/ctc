@@ -1,4 +1,5 @@
 # Countries, Timezones and Currencies - `ctc`
+[ ![Codeship Status for Mbanq/ctc](https://app.codeship.com/projects/5f5d71d0-e18c-0135-c0a1-7af5a338cc29/status?branch=master)](https://app.codeship.com/projects/266650) [![npm version](https://badge.fury.io/js/%40mbanq%2Fctc.svg)](https://badge.fury.io/js/%40mbanq%2Fctc)
 
 Mbanq's library to work with countries, timezones and currencies
 
